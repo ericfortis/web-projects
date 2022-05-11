@@ -1,7 +1,6 @@
 # Chord Maker
 A programming project for musicians learning to code.
 
-Demo App: __https://ericfortis.github.io/web-projects/chord-maker/__
 
 
 ## Exercise
