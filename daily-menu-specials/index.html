@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Daily Specials</title>
+	<style>
+		html,
+		body {
+			padding: 0;
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		body {
+			background: #222; /* The `background-image` is set below in JavaScript */
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	</style>
+</head>
+<body>
+
+<script>
+	var DAY_CHANGES_AT = 3 // 0-23
+
+	var now = new Date()
+	var day = [
+		'Sunday',
+		'Monday',
+		'Tuesday',
+		'Wednesday',
+		'Thursday',
+		'Friday',
+		'Saturday'
+	][now.getDay()]
+
+	// Adjust day. For example, it changes in or after 3:00AM
+	if (now.getHours() < DAY_CHANGES_AT)
+		day = (day - 1 + 7) % 7
+
+	document.body.style.backgroundImage = 'url(' + day + '.svg)'
+</script>
+</body>
+</html>

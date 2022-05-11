@@ -1,0 +1,27 @@
+<svg width="1080" height="1920" version="1.1" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+	<rect width="1080" height="1920" fill="#222"/>
+	<text
+		x="540"
+		y="440"
+		fill="#fafafa"
+		font-family="Avenir Next"
+		font-weight="bold"
+		font-size="180px"
+		text-anchor="middle">
+		Wednesday
+	</text>
+	<text
+		x="540"
+		y="590"
+		fill="#ccc"
+		font-family="Avenir Next"
+		font-weight="bold"
+		font-size="120px"
+		text-anchor="middle">
+		Specials
+	</text>
+	<rect x="210" y="1065" width="660" height="80" fill="#ff6f00" />
+	<rect x="210" y="1214" width="660" height="80" fill="#f9a825" />
+	<rect x="210" y="1363" width="660" height="80" fill="#ec407a" />
+	<rect x="210" y="1512" width="660" height="80" fill="#ff6f00" />
+</svg>
