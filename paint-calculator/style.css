@@ -1,0 +1,129 @@
+:root {
+	--colorAccent: #1d7cff;
+	--colorChange: rgba(198, 255, 0, 0.8);
+	--colorWall: rgba(194, 208, 220, 0.5);
+	--colorWallBorder: rgba(46, 65, 159, 0.56);
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Avenir Next, system-ui, sans-serif;
+	font-size: 16px;
+}
+
+body {
+	width: 260px;
+	margin: 60px auto 0;
+}
+
+::selection {
+	background: var(--colorAccent);
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input {
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	outline: 0;
+	color: var(--colorAccent);
+	background-size: 0 1px;
+	background-color: #fff;
+	background-image: linear-gradient(var(--colorAccent) 0%, var(--colorAccent) 100%);
+	background-repeat: no-repeat;
+	background-position: bottom -1px center;
+	transition: background-size 260ms ease-in-out;
+}
+input:focus {
+	background-size: 100% 1px;
+}
+
+fieldset {
+	border: 1px solid #fff;
+	margin-top: 36px;
+	border-radius: 6px;
+	background: #fafafa;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+fieldset legend {
+	padding: 0;
+	margin-bottom: 7px;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+
+.RoomWrap {
+	height: 240px;
+}
+.Room {
+	background: transparent;
+	transform-style: preserve-3d;
+	transform: translate(60px, 100px) rotateX(45deg) rotateZ(45deg);
+}
+.Room .Wall {
+	position: absolute;
+	border: 1px solid var(--colorWallBorder);
+	transform-origin: top left;
+	background: var(--colorWall);
+	transition: all 180ms ease-in-out;
+}
+
+
+.SizeInputs {
+	margin-top: 40px;
+}
+.SizeInputs label {
+	display: inline-block;
+	font-size: .8rem;
+}
+.SizeInputs label:not(:last-of-type) {
+	margin-right: 20px;
+}
+.SizeInputs input {
+	display: block;
+	width: 60px;
+	padding: 4px 0;
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+
+.WallFinishRadio :is(input, label) {
+	cursor: pointer;
+}
+.WallFinishRadio :is(input, label):active {
+	cursor: grabbing;
+}
+.WallFinishRadio label:not(:last-of-type) {
+	margin-right: 14px;
+}
+.WallFinishRadio input[type=radio] {
+	margin-right: 8px;
+}
+
+
+.OutputDisplay output {
+	color: var(--colorAccent);
+	font-weight: bold;
+	border-radius: 8px;
+	font-size: 2rem;
+}
+
+.feedbackPulse {
+	animation: kfPulse 1800ms 1;
+}
+
+@keyframes kfPulse {
+	0% {
+		background-color: var(--colorChange);
+	}
+}
+
