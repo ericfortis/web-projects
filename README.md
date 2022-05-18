@@ -5,7 +5,7 @@ These programs are [ISC licensed](./LICENSE).
 
 
 ## Paint Calculator [(Demo)](https://ericfortis.github.io/web-projects/paint-calculator/)
-Compute the gallons needed to paint a room.
+Compute the gallons needed to paint a room, with 3D box that mimics the input dimensions.
 
 
 ## Daily Menu Specials [(Demo)](https://ericfortis.github.io/web-projects/daily-menu-specials/)
