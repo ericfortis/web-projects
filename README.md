@@ -5,7 +5,7 @@ These programs are [ISC licensed](./LICENSE).
 
 
 ## Paint Calculator [(Demo)](https://ericfortis.github.io/web-projects/paint-calculator/)
-A plain CSS, JS, HTML paint calculator.
+Compute the gallons needed to paint a room.
 
 
 ## Daily Menu Specials [(Demo)](https://ericfortis.github.io/web-projects/daily-menu-specials/)
