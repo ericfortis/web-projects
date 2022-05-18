@@ -60,6 +60,7 @@ fieldset legend {
 
 .RoomWrap {
 	height: 240px;
+	pointer-events: none; /* Just in case it grows over the inputs */
 }
 .Room {
 	background: transparent;
