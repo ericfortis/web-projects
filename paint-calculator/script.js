@@ -36,7 +36,7 @@ document.body.append(
 		label(null, 'Width (ft)', input({
 			id: 'iWidth',
 			ref: refWidthInput,
-			value: 10,
+			value: 12,
 			onChange: update
 		})),
 		label(null, 'Length (ft)', input({
