@@ -4,7 +4,7 @@
 	--colorWall: rgba(200, 200, 200, 0.5);
 	--colorWallBorder: rgba(255, 255, 255, 0.3);
 	--colorBackground: #222;
-	--colorInputBackground: #333;
+	--colorInputBackground: rgba(127, 127, 127, 0.2);
 	--colorForeground: #fff;
 	--colorLabel: #bbb;
 	--colorBorders: rgba(204, 204, 204, 0.2);
@@ -44,8 +44,10 @@ body {
 }
 
 h1 {
+	padding-bottom: 4px;
 	border-bottom: 1px solid var(--colorBorders);
-	margin-top: 20px;
+	margin-top: 12px;
+	font-size: 28px;
 }
 
 input {
@@ -110,11 +112,11 @@ fieldset legend {
 .SizeInputs input {
 	display: block;
 	width: 50px;
-	padding: 4px 0;
+	padding: 4px 0 4px 5px;
 	margin-top: 3px;
 	font-weight: bold;
 	font-size: 1.1rem;
-	text-align: right;
+	text-align: left;
 }
 
 
