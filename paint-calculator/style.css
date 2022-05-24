@@ -1,6 +1,6 @@
 :root {
 	--colorAccent: #1d7cff;
-	--colorChange: rgba(198, 255, 0, 0.3);
+	--colorChange: rgba(142, 221, 245, 0.3);
 	--colorWall: rgba(200, 200, 200, 0.5);
 	--colorWallBorder: rgba(255, 255, 255, 0.3);
 	--colorBackground: #222;
@@ -135,7 +135,7 @@ fieldset legend {
 
 
 .OutputDisplay output {
-	padding: 4px;
+	padding: 5px;
 	font-weight: bold;
 	border-radius: 8px;
 	font-size: 2rem;
