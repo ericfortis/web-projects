@@ -1,4 +1,4 @@
-# Projects for learning web programming
+# Projects for learning Web Frontend Programming
 
 These projects are coded in plain JavaScript, CSS, and HTML.
 
