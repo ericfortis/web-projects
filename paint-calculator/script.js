@@ -1,5 +1,6 @@
 const cFeedbackPulse = 'feedbackPulse'
 
+const h1 = r.bind(null, 'h1')
 const div = r.bind(null, 'div')
 const label = r.bind(null, 'label')
 const input = r.bind(null, 'input')
@@ -21,7 +22,7 @@ const refWallFinishRadio = useRef()
 const refGallonsNeeded = useRef()
 
 document.body.append(
-	r('h1', null, 'Paint Calculator'),
+	h1(null, 'Paint Calculator'),
 
 	div({ className: 'RoomWrap' },
 		div({ className: 'Room', ref: refRoom },
