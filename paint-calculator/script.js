@@ -36,18 +36,21 @@ document.body.append(
 		label(null, 'Width (ft)', input({
 			id: 'iWidth',
 			ref: refWidthInput,
+			type: 'number',
 			value: 12,
 			onChange: update
 		})),
 		label(null, 'Length (ft)', input({
 			id: 'iLength',
 			ref: refLengthInput,
+			type: 'number',
 			value: 14,
 			onChange: update
 		})),
 		label(null, 'Height (ft)', input({
 			id: 'iHeight',
 			ref: refHeightInput,
+			type: 'number',
 			value: 8,
 			onChange: update
 		}))),
@@ -86,11 +89,9 @@ document.body.append(
 
 update()
 function update() {
-
-	// TODO validate and default to default value
-	const length = parseFloat(refLengthInput.current.value)
-	const width = parseFloat(refWidthInput.current.value)
-	const height = parseFloat(refHeightInput.current.value)
+	const length = refLengthInput.current.valueAsNumber
+	const width = refWidthInput.current.valueAsNumber
+	const height = refHeightInput.current.valueAsNumber
 
 	const pxLength = length * 10 + 'px'
 	const pxWidth = width * 10 + 'px'

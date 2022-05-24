@@ -109,12 +109,12 @@ fieldset legend {
 }
 .SizeInputs input {
 	display: block;
-	width: 60px;
+	width: 50px;
 	padding: 4px 0;
 	margin-top: 3px;
 	font-weight: bold;
 	font-size: 1.1rem;
-	text-align: center;
+	text-align: right;
 }
 
 
