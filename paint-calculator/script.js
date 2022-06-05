@@ -39,6 +39,7 @@ document.body.append(
 			ref: refWidthInput,
 			type: 'number',
 			value: 12,
+			min: 1,
 			onChange: update
 		})),
 		label(null, 'Length (ft)', input({
@@ -46,6 +47,7 @@ document.body.append(
 			ref: refLengthInput,
 			type: 'number',
 			value: 14,
+			min: 1,
 			onChange: update
 		})),
 		label(null, 'Height (ft)', input({
@@ -53,6 +55,7 @@ document.body.append(
 			ref: refHeightInput,
 			type: 'number',
 			value: 8,
+			min: 1,
 			onChange: update
 		}))),
 

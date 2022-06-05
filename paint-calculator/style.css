@@ -70,7 +70,7 @@ fieldset {
 	border: 1px solid var(--colorBorders);
 	margin-top: 36px;
 	border-radius: var(--borderRadius);
-	background: none;
+	background: rgba(0, 0, 0, 0.1);
 }
 fieldset legend {
 	padding: 0;
