@@ -1,6 +1,6 @@
 # Daily Menu Specials 
 
-## [Demo](https://ericfortis.github.io/web-projects/daily-menu-specials/)
+## [Demo &rarr;](https://ericfortis.github.io/web-projects/daily-menu-specials/)
 
 A webpage that shows a different image each day.
 
