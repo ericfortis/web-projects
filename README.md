@@ -9,7 +9,8 @@ Compute the gallons needed to paint a room, with 3D box that mimics the input di
 A programming project for musicians learning to code.
 
 ## Daily Menu Specials [(🔗 Demo)](https://ericfortis.github.io/web-projects/daily-menu-specials/)
-A webpage that shows a different image each day. For example, for a menu special.
+A webpage that shows a particular image based on
+the weekday. For example, for a menu special.
 
 
 ## License
