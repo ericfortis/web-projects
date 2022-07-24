@@ -23,7 +23,7 @@
 <body>
 
 <script>
-	const DayChangesAt = 1 // 0-23
+	const DayChangesAt = 2 // 0-23
 	const Days = [
 		'Sunday',
 		'Monday',
@@ -36,7 +36,7 @@
 
 	const now = new Date()
 	let day = now.getDay()
-	if (now.getHours() < DayChangesAt) // Adjust day. e.g., to change in or after 1AM
+	if (now.getHours() < DayChangesAt) // Adjust day. e.g., to change in or after 2AM
 		day = (day - 1 + 7) % 7
 	
 	document.body.style.backgroundImage = 'url(' + Days[day] + '.svg)'
