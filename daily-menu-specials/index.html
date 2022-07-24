@@ -24,14 +24,14 @@
 
 <script>
 	const DayChangesAt = 2 // 0-23
-	const Days = [
-		'Sunday',
-		'Monday',
-		'Tuesday',
-		'Wednesday',
-		'Thursday',
-		'Friday',
-		'Saturday'
+	const MenuImages = [
+		'Sunday.svg',
+		'Monday.svg',
+		'Tuesday.svg',
+		'Wednesday.svg',
+		'Thursday.svg',
+		'Friday.svg',
+		'Saturday.svg'
 	];
 
 	const now = new Date()
@@ -39,7 +39,7 @@
 	if (now.getHours() < DayChangesAt) // Adjust day. e.g., to change in or after 2AM
 		day = (day - 1 + 7) % 7
 	
-	document.body.style.backgroundImage = 'url(' + Days[day] + '.svg)'
+	document.body.style.backgroundImage = 'url(' + MenuImages[day] + ')'
 </script>
 </body>
 </html>
