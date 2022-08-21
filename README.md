@@ -1,6 +1,6 @@
 # Projects for learning Web Frontend Programming
 
-These projects are coded in plain JavaScript, CSS, and HTML.
+Plain JavaScript, CSS, and HTML projects for learning web frontend development.
 
 ## Paint Calculator [(🔗 Demo)](https://ericfortis.github.io/web-projects/paint-calculator/)
 Compute the gallons needed to paint a room, with 3D box that mimics the input dimensions.
