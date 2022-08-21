@@ -22,72 +22,73 @@ const refWallFinishRadio = useRef()
 const refGallonsNeeded = useRef()
 
 document.body.append(
-	h1(null, 'Paint Calculator'),
+	div({ className: 'PaintCalculator' },
+		h1(null, 'Paint Calculator'),
 
-	div({ className: 'RoomWrap' },
-		div({ className: 'Room', ref: refRoom },
-			div({ className: 'Wall', ref: refNorthWall }),
-			div({ className: 'Wall', ref: refSouthWall }),
-			div({ className: 'Wall', ref: refEastWall }),
-			div({ className: 'Wall', ref: refWestWall }))),
+		div({ className: 'RoomWrap' },
+			div({ className: 'Room', ref: refRoom },
+				div({ className: 'Wall', ref: refNorthWall }),
+				div({ className: 'Wall', ref: refSouthWall }),
+				div({ className: 'Wall', ref: refEastWall }),
+				div({ className: 'Wall', ref: refWestWall }))),
 
-	fieldset({ className: 'SizeInputs' },
-		legend(null, 'Room Size'),
+		fieldset({ className: 'SizeInputs' },
+			legend(null, 'Room Size'),
 
-		label(null, 'Width (ft)', input({
-			id: 'iWidth',
-			ref: refWidthInput,
-			type: 'number',
-			value: 12,
-			min: 1,
-			onChange: update
-		})),
-		label(null, 'Length (ft)', input({
-			id: 'iLength',
-			ref: refLengthInput,
-			type: 'number',
-			value: 14,
-			min: 1,
-			onChange: update
-		})),
-		label(null, 'Height (ft)', input({
-			id: 'iHeight',
-			ref: refHeightInput,
-			type: 'number',
-			value: 8,
-			min: 1,
-			onChange: update
-		}))),
+			label(null, 'Width (ft)', input({
+				id: 'iWidth',
+				ref: refWidthInput,
+				type: 'number',
+				value: 12,
+				min: 1,
+				onChange: update
+			})),
+			label(null, 'Length (ft)', input({
+				id: 'iLength',
+				ref: refLengthInput,
+				type: 'number',
+				value: 14,
+				min: 1,
+				onChange: update
+			})),
+			label(null, 'Height (ft)', input({
+				id: 'iHeight',
+				ref: refHeightInput,
+				type: 'number',
+				value: 8,
+				min: 1,
+				onChange: update
+			}))),
 
-	fieldset({
-			ref: refWallFinishRadio,
-			className: 'WallFinishRadio'
-		},
-		legend(null, 'Wall Finish'),
+		fieldset({
+				ref: refWallFinishRadio,
+				className: 'WallFinishRadio'
+			},
+			legend(null, 'Wall Finish'),
 
-		label(null, input({
-			id: 'rSmoothFinish',
-			type: 'radio',
-			name: 'wallFinish',
-			value: 400, // sq.ft. per gallon
-			checked: true,
-			onChange: update
-		}), 'Smooth'),
+			label(null, input({
+				id: 'rSmoothFinish',
+				type: 'radio',
+				name: 'wallFinish',
+				value: 400, // sq.ft. per gallon
+				checked: true,
+				onChange: update
+			}), 'Smooth'),
 
-		label(null, input({
-			id: 'rTexturedFinish',
-			type: 'radio',
-			name: 'wallFinish',
-			value: 350,
-			onChange: update
-		}), 'Textured')),
+			label(null, input({
+				id: 'rTexturedFinish',
+				type: 'radio',
+				name: 'wallFinish',
+				value: 350,
+				onChange: update
+			}), 'Textured')),
 
-	fieldset({ className: 'OutputDisplay' },
-		legend(null, 'Gallons Needed'),
-		output({
-			for: 'iWidth iLength iHeight rSmoothFinish rTexturedFinish',
-			ref: refGallonsNeeded
-		}))
+		fieldset({ className: 'OutputDisplay' },
+			legend(null, 'Gallons Needed'),
+			output({
+				for: 'iWidth iLength iHeight rSmoothFinish rTexturedFinish',
+				ref: refGallonsNeeded
+			})))
 )
 
 
