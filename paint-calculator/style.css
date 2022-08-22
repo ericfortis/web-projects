@@ -45,7 +45,7 @@ html {
 	background: var(--colorFormBackground);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 	.PaintCalculator {
 		width: 100vw;
 	}
